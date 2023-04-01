@@ -1,25 +1,68 @@
+// seleccionamos el formulario
 const form = document.querySelector('.contacto-form');
-const nombre = document.querySelector('#nombre');
-const email = document.querySelector('#email');
-const mensaje = document.querySelector('#mensaje');
 
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+// seleccionamos los campos del formulario
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const mensaje = document.getElementById('mensaje');
 
-    const formData = {
-        nombre: nombre.value,
-        email: email.value,
-        mensaje: mensaje.value
-};
+// seleccionamos los elementos de error
+const errorNombre = document.getElementById('error-nombre');
+const errorEmail = document.getElementById('error-email');
+const errorMensaje = document.getElementById('error-mensaje');
 
-    const response = await fetch('/send', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    });
+// ocultamos los mensajes de error al cargar la página
+ocultarError(errorNombre);
+ocultarError(errorEmail);
+ocultarError(errorMensaje);
 
-    const data = await response.json();
-    console.log(data);
-});
+// función para validar el formulario
+function validarFormulario(event) {
+  event.preventDefault();
+
+  if (nombre.value.trim() === '') {
+    mostrarError(errorNombre, 'Por favor, ingresa tu nombre.');
+  } else {
+    ocultarError(errorNombre);
+  }
+
+  if (email.value.trim() === '' || !validarEmail(email.value.trim())) {
+    mostrarError(errorEmail, 'Por favor, ingresa un email válido.');
+  } else {
+    ocultarError(errorEmail);
+  }
+
+  if (mensaje.value.trim() === '') {
+    mostrarError(errorMensaje, 'Por favor, ingresa un mensaje.');
+  } else {
+    ocultarError(errorMensaje);
+  }
+
+  if (nombre.value.trim() !== '' && email.value.trim() !== '' && validarEmail(email.value.trim()) && mensaje.value.trim() !== '') {
+    form.submit();
+    nombre.value = '';
+    email.value = '';
+    mensaje.value = '';
+    alert('¡Gracias por contactarte conmigo!');
+  }
+}
+
+// función para validar el formato del email
+function validarEmail(email) {
+  const re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+// función para mostrar los mensajes de error
+function mostrarError(elemento, mensaje) {
+  elemento.style.display = 'block';
+  elemento.innerHTML = mensaje;
+}
+
+// función para ocultar los mensajes de error
+function ocultarError(elemento) {
+  elemento.style.display = 'none';
+}
+
+// agregamos el evento submit al formulario
+form.addEventListener('submit', validarFormulario);

@@ -152,15 +152,18 @@
                             <div class="form-nombre-mail-item">
                                 <label class="form-label" for="nombre">Nombre:</label>
                                 <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre..." required>
+                                <div class="error" id="error-nombre"></div>
                             </div>
                             <div class="form-nombre-mail-item">
                                 <label class="form-label"  for="email">Email:</label>
                                 <input class="form-input" type="email" id="email" name="_replyto" placeholder="ejemplo@mail.com" required>
+                                <div class="error" id="error-email"></div>
                             </div>
                         </div>
                         <div class="form-msj">
                             <label class="form-label"  for="mensaje">Mensaje:</label>
                             <textarea class="form-input" id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje..." required></textarea>
+                            <div class="error" id="error-mensaje"></div>
                         </div>
                         <button class="form-submit" type="submit">Enviar</button>
                     </form>
