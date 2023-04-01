@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/app.css">
         <script src="/js/form.js" defer></script>
+        <script src="/js/nav.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -20,16 +21,16 @@
             <nav class="nav">
                 <ul class="nav-lista">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
+                        <a class="nav-link" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -59,24 +60,24 @@
             </div>
         </header>
         <main class="main">
-            <section class="inicio-container">
+            <section class="inicio-container" id="inicio">
                 <div class="inicio-foto-container">
-                    <img class="inicio-img" src="" alt="Marcos Furco">
+                    <img class="inicio-foto" src="/resources/foto-perfil.png" alt="Marcos Furco">
                 </div>
                 <div class="inicio-presentacion-container">
                     <h2 class="inicio-presentacion-nombre">Marcos Furco</h2>
-                    <h3 class="inicio-presentacion-cargo">Front-End Developer</h3>
+                    <h3 class="inicio-presentacion-cargo hvr-bob">Front-End Developer</h3>
                 </div>
             </section>
             <section class="about-container">
                 <div class="about-foto-container">
                     <img class="about-foto" src="/resources/about-foto.png" alt="foto-about">
                 </div>
-                <div class="about-texto-container">
+                <div class="about-texto-container" id="about">
                     <p class="about-texto">Mi nombre es Marcos Furco y soy desarrollador Front-End. Desde niño que la tecnología siempre llamó mi atención. Y a mediados de la pandemia en 2021 me decidí por meterme en este mundo de la programación, me prepare de manera autodidacta en HTML y CSS hasta que en el 2022 comencé la capacitación en Front-End que ofrecía Oracle con el proyecto "Oracle ONE". Aunque ya me haya certificado al final de este estudio, continúo capacitandome constantemente ya sea con frameworks o distintos lenguajes(Actualmente estudiando React).</p>
                 </div>
             </section>
-            <section class="proyectos-container">
+            <section class="proyectos-container" id="proyectos">
                 <h2 class="proyectos-titulo">Algunos de mis proyectos</h2>
                 <div class="proyectos-grid">
                     <div class="grid-item" id="proyecto-principal">
@@ -144,7 +145,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacto-container">
+            <section class="contacto-container" id="contacto">
                 <div class="contacto-form-container">
                     <h2 class="contacto-titulo">Contáctame</h2>
                     <form class="contacto-form" netlify action="/gracias" method="POST">

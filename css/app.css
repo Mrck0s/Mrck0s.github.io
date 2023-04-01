@@ -78,6 +78,17 @@
     display: flex;
     background-color: rgb(14, 14, 43);
 }
+.inicio-foto{
+    height: 40%;
+    margin: auto;
+    border: 2px solid rgb(25, 25, 75);
+    border-radius: 100%;
+    background-color: rgb(90, 90, 165);
+    box-shadow: -1px -1px 39px 55px rgba(31,46,94,1);
+-webkit-box-shadow: -1px -1px 39px 55px rgba(31,46,94,1);
+-moz-box-shadow: -1px -1px 39px 55px rgba(31,46,94,1);
+}
+
 .inicio-presentacion-container{
     height: 100%;
     width: 60%;
@@ -94,7 +105,8 @@
     margin-top: 15%;
     color: wheat;
     font-size: 40px;
-    border: 2px solid wheat;;
+    border: 2px solid wheat;
+    cursor: default;
 }
 /*Estilo de About*/
 .about-container{
@@ -333,3 +345,67 @@
     font-size: 15px;
     margin-top: 1%;
 }
+/*Transicion "Bob"*/
+@-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
