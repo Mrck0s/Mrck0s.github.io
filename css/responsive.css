@@ -137,7 +137,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .header-logo-container{
         margin-left: 15px;
     }
@@ -167,6 +167,9 @@
     }
     .contacto-titulo{
         font-size: 20px;
+    }
+    .form-input{
+        padding: 2%;
     }
     .footer{
         height: auto;
