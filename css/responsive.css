@@ -75,7 +75,7 @@
     }
 }
 
-@media  (max-width: 600px) {
+@media  (max-width: 800px) {
     .header{
         justify-content: space-between;
     }
@@ -141,15 +141,24 @@
     .header-logo-container{
         margin-left: 15px;
     }
+    .inicio-presentacion-nombre{
+        font-size: 40px;
+    }
+    .inicio-presentacion-cargo{
+        font-size: 30px;
+    }
     .about-texto{
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
+        margin-top: 5px;
     }
     .proyectos-container{
         height: auto;
     }
     .proyectos-titulo{
-        font-size: 25px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-decoration: underline; 1px;
     }
     .proyectos-grid{
         display: flex;
