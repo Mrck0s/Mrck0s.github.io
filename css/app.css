@@ -1,0 +1,335 @@
+/*Estilo del Header*/
+.header{
+    background-color: rgb(60, 60, 167);
+    height: 10vh;
+    display: flex;
+}
+.header-logo-container{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.header-logo{
+    height: 80%;
+    padding-top: 5%;
+}
+.nav{
+    height: 100%;
+    width: 70%;
+}
+.nav-lista{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item{
+    height: 60%;
+    transition: all 0.2s;
+}
+.nav-item:hover{
+    transform: scale(1.1);
+}
+.nav-link{
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+}
+.redes-container{
+    height: 100%;
+    width: 20%;
+}
+.redes-lista{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.redes-item{
+    height: 50%;
+    width: 15%;
+}
+.redes-link{
+    height: 100%;
+    width: 100%;
+}
+.redes-img{
+    height: 100%;
+    transition: all 0.2s;
+}
+.redes-img:hover{
+    transform: scale(1.1);
+}
+/*Estilo de Inicio*/
+.inicio-container{
+    height: 90vh;
+    background-color: rgb(25, 25, 75);
+    display: flex;
+}
+.inicio-foto-container{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    background-color: rgb(14, 14, 43);
+}
+.inicio-presentacion-container{
+    height: 100%;
+    width: 60%;
+    text-align: center;
+}
+.inicio-presentacion-nombre{
+    margin-top: 25%;
+    color: wheat;
+    font-size: 70px;
+    text-decoration: underline 2px;
+}
+.inicio-presentacion-cargo{
+    display: inline-block;
+    margin-top: 15%;
+    color: wheat;
+    font-size: 40px;
+    border: 2px solid wheat;;
+}
+/*Estilo de About*/
+.about-container{
+    height: 35vh;
+    background-color: rgb(29, 29, 131);
+    display: flex;
+}
+.about-foto-container{
+    height: 100%;
+    width: 25%;
+}
+.about-foto{
+    height: 100%;
+}
+.about-texto-container{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+.about-texto{
+    color: wheat;
+    font-size: 20px;
+    margin-top: 10%;
+}
+/*Estilo de Proyectos*/
+.proyectos-container{
+    height: 65vh;
+    background-color: rgb(29, 29, 131);
+}
+.proyectos-titulo{
+    height: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: wheat;
+}
+.proyectos-grid{
+    display: grid;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid-item{
+    margin: 15px;
+    background-color: rgb(14, 14, 43);
+
+}
+/*Estilo del proyecto principal*/
+#proyecto-principal{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.proyecto-principal-foto-container{
+    height: 55%;
+    width: 100%;
+}
+.proyecto-principal-foto{
+    width: 100%;
+    transition: all 0.3s;
+}
+.proyecto-principal-foto:hover{
+    transform: scale(1.2);
+}
+.proyecto-principal-titulo-container{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.proyecto-principal-titulo{
+    color: wheat;
+    font-size: 25px;
+    font-style: italic;
+}
+.proyecto-principal-descripcion-container{
+    height: 25%;
+    text-align: center;
+}
+.proyecto-principal-descripcion{
+    color: wheat;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.proyecto-principal-links-container{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-around;
+}
+.proyecto-principal-link{
+    color: wheat;
+    font-style: italic;
+}
+/*Estilo de los proyectos secundarios*/
+.proyecto-secundario{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.proyecto-secundario-foto-container{
+    grid-row: 1/4;
+    grid-column: 1/2;
+    display: flex;
+}
+.proyecto-secundario-titulo-container{
+    grid-row: 1/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+.proyecto-secundario-links-container{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+}
+.proyecto-secundario-foto{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    transition: all 0.3s;
+}
+.proyecto-secundario-foto:hover{
+    transform: scale(1.2);
+}
+.proyecto-secundario-titulo{
+    color: wheat;
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 75px;
+}
+.proyecto-secundario-link{
+    color: wheat;
+    font-style: italic;
+    margin: auto;
+}
+/*Estilo de Contacto*/
+.contacto-container{
+    height: 85vh;
+    display: flex;
+    background-color: rgb(25, 25, 75);
+}
+.contacto-form-container{
+    background-color: rgb(14, 14, 43);
+    height: 70%;
+    width: 50%;
+    margin: auto;
+}
+.contacto-titulo{
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 30px;
+    text-decoration: underline 2px;
+}
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+}
+.form-nombre-mail{
+    display: flex;
+    margin-top: 5%;
+    height: 20%;
+    justify-content: space-between;
+}
+.form-nombre-mail-item{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.form-msj{
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+}
+#mensaje{
+    height: 50%;
+}
+.form-label{
+    margin: 10px;
+    font-size: 25px;
+}
+.form-input{
+    background-color: rgb(25, 25, 75);
+    border: none;
+    padding: 5%;
+    color: wheat;
+}
+.form-input:focus{
+    outline: none;
+}
+.form-submit{
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    background-color: wheat;
+    color: rgb(14, 14, 43);
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.form-submit:hover{
+    background-color: rgb(190, 255, 91);
+    transform: scale(1.1);
+}
+/*Estilo del Footer*/
+.footer{
+    height: 15vh;
+    background-color: rgb(60, 60, 167)
+}
+.footer-logo-container{
+    height: 60%;
+    display: block;
+    text-align: center;
+}
+.footer-logo{
+    height: 100%;
+}
+.footer-texto-container{
+    height: 20%;
+    text-align: center;
+}
+.footer-texto{
+    color: wheat;
+    font-size: 15px;
+    margin-top: 1%;
+}
