@@ -1,0 +1,183 @@
+@media (max-width: 850px) {
+    /*Estilo header responsivo*/
+    .redes-container{
+        display: none;
+    }
+    .nav{
+        width: 90%;
+    }
+    /*Estilo inicio responsivo*/
+    .inicio-container{
+        display: inline-block;
+        width: 100%;
+    }
+    .inicio-foto-container{
+        width: 100%;
+        height: 60%;
+    }
+    .inicio-presentacion-container{
+        width: 100%;
+        height: 40%;
+    }
+    .inicio-presentacion-nombre{
+        width: 100%;
+        margin-top: 15px;
+    }
+    /*Estilo about responsivo*/
+    .about-foto-container{
+        display: none;
+    }
+    .about-texto-container{
+        height: 80%;
+        width: 90%;
+    }
+    /*Estilo proyectos responsivo*/
+    .grid-item{
+        margin: 5px;
+    }
+    .proyecto-principal-foto-container{
+        height: 40%;
+    }
+    .proyecto-principal-foto{
+        height: 100%;
+    }
+    .proyecto-principal-titulo-container{
+        margin-top: 20px;
+    }
+    .proyecto-principal-links-container{
+        margin-top: 25px;
+    }
+    .proyecto-secundario{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+    }
+    .proyecto-secundario-foto-container{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .proyecto-secundario-titulo-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .proyecto-secundario-links-container{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .proyecto-secundario-titulo{
+        padding-top: 0;
+        margin: auto;
+    }
+    .proyecto-secundario-titulo-oscuro{
+        color: rgb(14, 14, 43);
+    }
+    .proyecto-secundario-link{
+        padding-top: 0;
+    }
+}
+
+@media  (max-width: 600px) {
+    .header{
+        justify-content: space-between;
+    }
+    .header-logo-container{
+        width: 20%;
+    }
+    /*Estilo del menu desplegable*/
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: none;
+        height: 5vh;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 5px;
+        color: wheat ;
+        background-color: rgb(60, 60, 167);
+        box-shadow: 0 0 1px 1px rgb(43, 43, 122);
+        
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 15px;
+        top: 0;
+        right: 0;
+        background-color: rgb(60, 60, 167);
+        height: 60%;
+        width: 100%;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.7);
+    }
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-lista{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .nav-item{
+        height: 40%;
+        text-align: center;
+    }
+    /*Estilo responsivo del proyecto principal*/
+    .proyecto-principal-descripcion{
+        font-size: 15px;
+    }
+    /*Estilo responsivo del formulario de contacto*/
+    .form-label{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .form-nombre-mail{
+        height: 40%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-logo-container{
+        margin-left: 15px;
+    }
+    .about-texto{
+        font-size: 16px;
+        text-align: center;
+    }
+    .proyectos-container{
+        height: auto;
+    }
+    .proyectos-titulo{
+        font-size: 25px;
+    }
+    .proyectos-grid{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .contacto-titulo{
+        font-size: 20px;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer-logo-container{
+        height: 50px;
+    }
+    .footer-redes-lista{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-between;
+    }
+    .footer-redes-item{
+        height: 100%;
+        width: 50px;
+    }
+    .footer-redes-logo{
+        height: 50px;
+        width: 50px;
+        margin-top: 5px;
+    }
+}
