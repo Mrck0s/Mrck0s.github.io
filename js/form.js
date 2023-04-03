@@ -43,7 +43,10 @@ function validarFormulario(event) {
     nombre.value = '';
     email.value = '';
     mensaje.value = '';
-    alert('¡Gracias por contactarte conmigo!');
+    Swal.fire(
+      '¡Gracias por contactarte conmigo!',
+      'showCloseButton: true',
+    )
   }
 }
 
