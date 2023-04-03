@@ -70,7 +70,3 @@ function ocultarError(elemento) {
 // agregamos el evento submit al formulario
 form.addEventListener('submit', validarFormulario);
 
-// funcion para retrasar el envío y asi poder ver la notificacion de agradecimiento
-setTimeout(function() {
-  form.submit();
-}, 3000);
