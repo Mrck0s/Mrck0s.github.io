@@ -43,13 +43,8 @@ function validarFormulario(event) {
     nombre.value = '';
     email.value = '';
     mensaje.value = '';
-    Swal.fire(
-      '¡Gracias por contactarte conmigo!',
-      'showCloseButton: true',
-    )
   }
 }
-
 // función para validar el formato del email
 function validarEmail(email) {
   const re = /\S+@\S+\.\S+/;
