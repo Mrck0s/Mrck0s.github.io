@@ -1,5 +1,8 @@
+/*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
+/*Custom Styles*/
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +11,40 @@
     list-style: none;
     outline: none;
 }
+:root{
+    --color-white: #fafafa;
+    --color-primary: #3b1469;
+    --color-bg: #1f0a39;
+    --color-bg-ex: #1a0633;
+    --color-danger: #d53c3c;
+    
+}
 html{
     font-family: "Nunito", sans-serif;
+    line-height: normal;
 }
+body{
+    background: var(--color-bg);
+    color: var(--color-white);
+
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 44px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 24px;
+}
+p{
+    font-size: normal;
+}
+
+/*Navbar*/
