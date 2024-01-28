@@ -1,4 +1,5 @@
 import { headerData } from "../data/data"
+import { TypedText } from "../ui/TypedText"
 
 
 export const Header = () => {
@@ -13,7 +14,7 @@ export const Header = () => {
                                 </div>
                                 <div className="header-r">
                                     <div className="intro">
-                                        <h1>{intro} <span>{name}</span> </h1>
+                                        <TypedText text={intro} name={name}/>
                                     </div>
                                     <h5 className="prof">{profession}</h5>
                                 </div>
