@@ -109,9 +109,6 @@ header{
     gap: 80px;
     align-items: center;
 }
-header span{
-    color: var(--color-primary);
-}
 .intro{
     margin-bottom: 20px;
 }
@@ -120,4 +117,14 @@ header span{
     padding: 10px;
     margin: 0 auto;
     border: 2px solid var(--color-primary);
+}
+
+
+
+/*About*/
+.about-container h3{
+    margin-bottom: 20px;
+}
+.about-container a{
+    color: var(--color-danger);
 }
