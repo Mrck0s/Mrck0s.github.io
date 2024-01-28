@@ -6,9 +6,9 @@ export const Header = () => {
     return (
         <header>
                 {
-                    headerData.map(({perfilImg, intro, name, profession}) => {
+                    headerData.map(({perfilImg, intro, name, profession, id}) => {
                         return (
-                            <div className="container header-container">
+                            <div className="container header-container" key={id}>
                                 <div className="perfil-img">
                                     <img src={perfilImg} alt="Marcos furco" />
                                 </div>

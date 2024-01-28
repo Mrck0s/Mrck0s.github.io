@@ -1,6 +1,9 @@
 export const Exp = () => {
-    return (
-        <div>Exp</div>
-
-    )
-}
+  return (
+    <section className="exp">
+      <div className="container exp-container">
+        
+      </div>
+    </section>
+  );
+};
