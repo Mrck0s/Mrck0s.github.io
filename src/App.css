@@ -106,14 +106,19 @@ nav{
 
 /*Header*/
 header{
-    margin-top: 220px;
+    margin-top: 200px;
     margin-bottom: 170px;
 }
 .header-container{
     display: grid;
     grid-template-columns: 35% auto;
-    gap: 80px;
+    grid-template-rows: 60% auto;
+    gap: 20px 80px;
     align-items: center;
+}
+.perfil-img{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 .intro{
     margin-bottom: 20px;
@@ -124,7 +129,6 @@ header{
     margin: 0 auto;
     border: 2px solid var(--color-primary);
 }
-
 
 
 /*About*/
