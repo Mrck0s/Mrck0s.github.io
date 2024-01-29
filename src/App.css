@@ -18,7 +18,9 @@
     --color-bg: #18052f;
     --color-bg-ex: #230b40;
     --color-danger: #d53c3c;
+    --color-off: #5a5a5a;
     --transition: .3s ease;
+    --rounded: 14px;
 }
 html{
     font-family: "Nunito", sans-serif;
@@ -57,7 +59,11 @@ img{
     margin-inline: auto;
     max-width: 1600px;
 }
-
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
 
 
 /*Navbar*/
@@ -127,4 +133,13 @@ header{
 }
 .about-container a{
     color: var(--color-danger);
+}
+
+
+
+/*Experience*/
+.exp-container h2{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
