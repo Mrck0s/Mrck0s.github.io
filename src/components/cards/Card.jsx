@@ -12,7 +12,7 @@ export const Card = ({ img, name, desc, time, repo, web}) => {
       repo && <a href={repo}>View code</a> 
     }
     {
-      web && <a href={web}>Visit page</a>
+      web != "" && <a href={web}>Visit page</a>
     }
     </div>
   </div>

@@ -3,7 +3,7 @@ import { aboutData } from "../data/data"
 
 export const About = () => {
     return (
-        <section>
+        <section className="about" id="about">
             {
                 aboutData.map(({infoText, link, linkText, aboutText, ilustration, id}) => {
                     return(

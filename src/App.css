@@ -36,6 +36,9 @@ h1{
 }
 h2{
     font-size: 44px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 40px 0;
 }
 h3{
     font-size: 26px;
@@ -61,6 +64,8 @@ img{
 }
 .cards-container{
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
 }
@@ -107,7 +112,7 @@ nav{
 /*Header*/
 header{
     margin-top: 200px;
-    margin-bottom: 170px;
+    margin-bottom: 140px;
 }
 .header-container{
     display: grid;
@@ -131,6 +136,7 @@ header{
 }
 
 
+
 /*About*/
 .about-container{
     display: grid;
@@ -151,12 +157,4 @@ header{
 }
 .about-container img{
     border-radius: var(--rounded);
-}
-
-
-/*Experience*/
-.exp-container h2{
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
 }

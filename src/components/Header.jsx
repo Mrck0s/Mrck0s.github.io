@@ -4,7 +4,7 @@ import { TypedText } from "../ui/TypedText";
 
 export const Header = () => {
   return (
-    <header>
+    <header className="header" id="home">
       {headerData.map(({ perfilImg, intro, name, profession, id }) => {
         return (
           <div className="container header-container" key={id}>
