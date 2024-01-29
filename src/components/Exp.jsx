@@ -9,8 +9,6 @@ export const Exp = () => {
         <h2>This is some of my work experience</h2>
         <div className="cards-container">
             <Card img={finnegans} name="Finnegans" time="3 months" desc={finExp} />
-            <Card img={finnegans} name="Finnegans" time="3 months" desc={finExp} />
-            <Card img={finnegans} name="Finnegans" time="3 months" desc={finExp} />
         </div>
       </div>
     </section>
