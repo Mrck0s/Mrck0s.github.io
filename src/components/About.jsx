@@ -1,16 +1,18 @@
 import { aboutData } from "../data/data"
 
+
 export const About = () => {
     return (
         <section>
             {
-                aboutData.map(({infoText, link, linkText, aboutText, id}) => {
+                aboutData.map(({infoText, link, linkText, aboutText, ilustration, id}) => {
                     return(
                         <div className="container about-container" key={id}>
-                            <h3>{infoText} <a href={link}>{linkText}</a> </h3>
                             <div>
-                                <p>{aboutText}</p>
+                            <h3>{infoText} <a href={link}>{linkText}</a> </h3>
+                            <p>{aboutText}</p>
                             </div>
+                            <img src={ilustration} alt="ilustration" />
                         </div>
                     )
                 })
