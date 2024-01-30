@@ -11,6 +11,7 @@
     text-decoration: none;
     list-style: none;
     outline: none;
+    overflow-x: hidden;
 }
 :root{
     --color-white: #fafafa;
@@ -164,4 +165,30 @@ header{
 /*Experience*/
 .exp-card:hover{
     transform: scale(1.2);
+}
+
+
+
+/*Contact*/
+.contact-container{
+    margin-top: 80px;
+    width: 100vw;
+    background-color: #0d021b;
+    padding: 30px;
+}
+.mail{
+    display: flex;
+    gap: 6px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.mail span{
+    display: flex;
+    align-items: center;
+}
+.contact-container a{
+    color: var(--color-off);
+}
+.contact-container a:hover{
+    color: var(--color-danger);
 }

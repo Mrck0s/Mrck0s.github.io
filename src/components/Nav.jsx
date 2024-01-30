@@ -15,7 +15,6 @@ export const Nav = () => {
                     <a href="#"><span><CiInstagram/></span></a>
                     <a href="#"><span><IoLogoGithub/></span></a>
                     <a href="#"><span><CiLinkedin/></span></a>
-
                 </div>
             </div>
         </nav>
