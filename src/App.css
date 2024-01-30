@@ -158,3 +158,10 @@ header{
 .about-container img{
     border-radius: var(--rounded);
 }
+
+
+
+/*Experience*/
+.exp-card:hover{
+    transform: scale(1.2);
+}
