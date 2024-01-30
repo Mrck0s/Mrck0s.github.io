@@ -71,17 +71,6 @@ img{
     margin: 20px auto;
     padding: 20px 0;
 }
-.skills-container{
-    display: flex;
-    gap: 10px 60px;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 500px;
-    margin: auto;
-    max-height: 350px;
-    border: 2px solid var(--color-primary);
-    padding: 0.6em;
-}
 
 
 /*Navbar*/
@@ -146,7 +135,21 @@ header{
     padding: 10px;
     margin: 0 auto;
     border: 2px solid var(--color-primary);
+    border-radius: var(--rounded);
 }
+.header-skills-container{
+    display: flex;
+    gap: 10px 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    max-height: 350px;
+    border: 2px solid var(--color-primary);
+    padding: 0.6em;
+    border-radius: var(--rounded);
+}
+
 .header-skill{
     width: 60px;
     margin: auto;
@@ -181,6 +184,19 @@ header{
 .exp-card:hover{
     transform: scale(1.2);
 }
+
+
+/*Projects*/
+.project-skills-container{
+    width: 100%;
+    display: flex;
+    gap: 10px 14px;
+
+}
+.project-skill{
+    width: 20px;
+}
+
 
 
 /*Contact*/

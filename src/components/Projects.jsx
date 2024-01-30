@@ -14,6 +14,7 @@ export const Projects = () => {
                 key={project.id}
                 img={project.preview}
                 name={project.name}
+                tech={project.tech}
                 desc={project.desc}
                 repo={project.repo}
                 web={project.web}
