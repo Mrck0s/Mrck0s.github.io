@@ -17,6 +17,13 @@ export const Header = () => {
               </div>
               <h5 className="prof">{profession}</h5>
             </div>
+            <div className="skills-container">
+              {
+                skills.map((skill) => {
+                  return <img className="header-skill" key={skill.id} src={skill.img} alt={skill.name}/>;
+                })
+              }
+            </div>
           </div>
         );
       })}

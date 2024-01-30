@@ -68,7 +68,19 @@ img{
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.skills-container{
+    display: flex;
+    gap: 10px 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
     margin: auto;
+    max-height: 350px;
+    border: 2px solid var(--color-primary);
+    padding: 0.6em;
 }
 
 
@@ -112,14 +124,14 @@ nav{
 
 /*Header*/
 header{
-    margin-top: 200px;
+    margin-top: 180px;
     margin-bottom: 140px;
 }
 .header-container{
     display: grid;
     grid-template-columns: 35% auto;
     grid-template-rows: 60% auto;
-    gap: 20px 80px;
+    gap: 0 80px;
     align-items: center;
 }
 .perfil-img{
@@ -135,7 +147,10 @@ header{
     margin: 0 auto;
     border: 2px solid var(--color-primary);
 }
-
+.header-skill{
+    width: 60px;
+    margin: auto;
+}
 
 
 /*About*/
@@ -166,7 +181,6 @@ header{
 .exp-card:hover{
     transform: scale(1.2);
 }
-
 
 
 /*Contact*/

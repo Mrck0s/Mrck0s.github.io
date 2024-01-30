@@ -1,6 +1,12 @@
 import perfilImg from '../assets/perfil.png'
 import ilustration from '../assets/ilustration.png'
 import js from '../assets/js.png'
+import java from '../assets/java.png'
+import spring from '../assets/spring.png'
+import react from '../assets/react.png'
+import mysql from '../assets/mysql.png'
+import css from '../assets/css.png'
+import tailwind from '../assets/tailwind.png'
 import pkmPreview from '../assets/pkm-preview.png'
 import lookify from '../assets/lookify.png'
 import portfolio from '../assets/portfolio-preview.png'
@@ -39,32 +45,32 @@ export const skills = [
     {
         id: 2,
         name: "Java",
-        img: js
+        img: java
     },
     {
         id: 3,
         name: "React",
-        img: js
+        img: react
     },
     {
         id: 4,
         name: "Spring",
-        img: js
+        img: spring
     },
     {
         id: 5,
         name: "MySql",
-        img: js
+        img: mysql
     },
     {
         id: 6,
         name: "CSS",
-        img: js
+        img: css
     },
     {
         id: 7,
         name: "Tailwind",
-        img: js
+        img: tailwind
     },
 ]
 
