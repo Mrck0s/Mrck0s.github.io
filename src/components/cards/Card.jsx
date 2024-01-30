@@ -1,6 +1,6 @@
 import './Cards.css'
 
-export const Card = ({ img, name, desc, time, repo, web}) => {
+export const Card = ({ img, name, desc, time, repo, web, customLink, customLinkText}) => {
   return (
   <div className="card">
     <img src={img} alt={name}/>
@@ -12,7 +12,10 @@ export const Card = ({ img, name, desc, time, repo, web}) => {
       repo && <a href={repo}>View code</a> 
     }
     {
-      web != "" && <a href={web}>Visit page</a>
+      web !== "" && <a href={web}>Visit page</a>
+    }
+    {
+      customLink && <a href={customLink}>{customLinkText}</a>
     }
     </div>
   </div>

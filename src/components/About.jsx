@@ -9,8 +9,8 @@ export const About = () => {
                     return(
                         <div className="container about-container" key={id}>
                             <div>
-                            <h3>{infoText} <a href={link}>{linkText}</a> </h3>
                             <p>{aboutText}</p>
+                            <h3>¡ {infoText} <a href={link}>{linkText}</a> !</h3>
                             </div>
                             <img src={ilustration} alt="ilustration" />
                         </div>
