@@ -7,7 +7,7 @@
     width: 280px;
     max-height: 500px;
     border-radius: var(--rounded);
-    background: linear-gradient(180deg, rgba(24, 21, 130, 0.5) 0%, rgba(0, 213, 255, 0.3) 26%, rgba(17, 14, 105, 0.5) 92%);
+    background: linear-gradient(180deg, rgba(59, 21, 130, 0.5) 0%, rgba(130, 120, 160, 0.5) 26%, rgba(59, 21, 130, 0.5) 92%);
     box-shadow: 0 2px 10px 0 #00000099;
     transition: var(--transition);
 }
