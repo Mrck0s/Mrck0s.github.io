@@ -27,17 +27,17 @@ export const Nav = () => {
           <a href="#contact">Contact</a>
         </div>
         <div className="socials">
-          <a href="#">
+          <a href="https://www.instagram.com/m4rcos_fg/">
             <span>
               <CiInstagram />
             </span>
           </a>
-          <a href="#">
+          <a href="https://github.com/Mrck0s">
             <span>
               <IoLogoGithub />
             </span>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/msfurcogaitan/">
             <span>
               <CiLinkedin />
             </span>
@@ -56,17 +56,17 @@ export const Nav = () => {
               <a href="#contact" onClick={handleIsMenuOpen}>Contact</a>
             </div>
             <div className="socials-mobile">
-              <a href="#">
+              <a href="https://www.instagram.com/m4rcos_fg/">
                 <span>
                   <CiInstagram />
                 </span>
               </a>
-              <a href="#">
+              <a href="https://github.com/Mrck0s">
                 <span>
                   <IoLogoGithub />
                 </span>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/msfurcogaitan/">
                 <span>
                   <CiLinkedin />
                 </span>

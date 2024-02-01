@@ -16,17 +16,17 @@ export const Contact = () => {
           <span>{email}</span>
         </div>
         <div className="socials">
-          <a href="#">
+          <a href="https://www.instagram.com/m4rcos_fg/">
             <span>
               <CiInstagram />
             </span>
           </a>
-          <a href="#">
+          <a href="https://github.com/Mrck0s">
             <span>
               <IoLogoGithub />
             </span>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/msfurcogaitan/">
             <span>
               <CiLinkedin />
             </span>
