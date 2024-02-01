@@ -130,7 +130,7 @@ export const projects = [
         name: "Pokemon Selector",
         preview: pkmPreview,
         tech: [skills[0], skills[5]],
-        desc: "Visual simulation of the typical first pokemon selections",
+        desc: "Visual simulation of the typical first pokemon selections *No mobile styles*",
         repo: "https://github.com/Mrck0s/pokemon-inicial",
         web: "https://mrck0s-pkm-kanto.netlify.app/",
 
