@@ -323,7 +323,7 @@ header {
     box-shadow: 0 0 10px 0 #00000099;
   }
   .nav-mobile {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
